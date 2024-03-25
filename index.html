@@ -6,14 +6,14 @@
 <title>New Registration</title>
 <style>
     body {
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
         color: #333;
         margin: 0;
         padding: 0;
     }
     .header {
-        background-color: #333;
+        background-color: #4285f4;
         color: #fff;
         padding: 20px 0;
         text-align: center;
@@ -24,47 +24,56 @@
         background-color: #fff;
         border-radius: 8px;
         padding: 20px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        text-align: center; /* Center the button */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        text-align: center;
     }
     h2 {
         text-align: center;
         margin-bottom: 20px;
+        color: #4285f4;
     }
     .tab {
         display: none;
     }
     .tab-label {
         cursor: pointer;
+        color: #4285f4;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    .tab-label:hover {
+        color: #1a73e8;
     }
     .faq-question {
         font-weight: bold;
     }
     .button {
-        background-color: #000;
+        background-color: #4285f4;
         color: #fff;
-        padding: 10px 20px;
+        padding: 15px 30px;
         text-decoration: none;
-        border-radius: 5px;
+        border-radius: 25px;
         margin-top: 20px;
+        display: inline-block;
+        transition: background-color 0.3s ease;
     }
     .button:hover {
-        background-color: #555;
+        background-color: #1a73e8;
     }
     .footer {
         position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
-        background-color: black;
-        color: white;
+        background-color: #f8f8f8;
+        color: #333;
         text-align: center;
         padding: 10px;
     }
     .qr-code {
         display: block;
-        margin: 30px auto; /* Center the QR code */
-        max-width: 300px; /* Adjust the size as needed */
+        margin: 30px auto; 
+        max-width: 300px; 
     }
 </style>
 </head>
@@ -73,13 +82,13 @@
         <h1>New Registration</h1>
     </div>
     <div class="container">
-        <h2></h2>
+        <h2>Join Us Today!</h2>
         <form id="employeeForm">
             <div>
                 <label for="firstName"></label>
             </div>
             <!-- Add more form fields as needed -->
-            <a href="https://shorturl.at/iruI0" class="button">New Registration</a>
+            <a href="https://shorturl.at/iruI0" class="button">Start Registration</a>
         </form>
     </div>
     <div class="container">
@@ -90,11 +99,11 @@
         </div>
         <div class="tab-label" onclick="toggleTab('faq2')">2. How to register?</div>
         <div class="tab" id="faq2">
-            <p>To register, users simply need to click on the "New Registration" tab at the top of the page and fill out the Employee Details form. The form is straightforward and easy to complete, requiring basic information about the employee's personal and contact details, previous work experience, qualifications, and more.</p>
+            <p>To register, users simply need to click on the "Start Registration" button at the top of the page and fill out the Employee Details form. The form is straightforward and easy to complete, requiring basic information about the employee's personal and contact details, previous work experience, qualifications, and more.</p>
         </div>
         <div class="tab-label" onclick="toggleTab('faq3')">3. Can I complete registration on my phone?</div>
         <div class="tab" id="faq3">
-            <p>Yes! Registration can be completed on any device with internet access, including your phone. Simply copy and paste the URL into your mobile browser, and you can fill out the form anytime, anywhere. This flexibility allows for convenient registration, whether you're at home, in the office, or on the go.</p>
+            <p>Yes! Registration can be completed on any device with internet access, including your phone. Simply click the "Start Registration" button, and you can fill out the form anytime, anywhere. This flexibility allows for convenient registration, whether you're at home, in the office, or on the go.</p>
         </div>
     </div>
 
@@ -125,4 +134,3 @@
     </script>
 </body>
 </html>
-
